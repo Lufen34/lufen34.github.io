@@ -1,0 +1,17 @@
+<div class="flex flex-col w-full h-2/3">
+  <div class="h-16 w-full flex justify-end items-center">
+    <button  (click)="applyDarkMode()">
+      <i class="fas fa-sun fa-2x text-black dark:text-white m-2"></i>
+    </button>
+  </div>
+
+  <div class="h-full w-full antialiased flex flex-col-reverse justify-start lg:justify-start lg:flex-row lg:p-10">
+    <div class="w-full text-black dark:text-white font-main h-full mt-10 lg:p-20 text-center lg:text-left lg:w-3/5">
+      <p class="p-2 text-4xl md:text-5xl lg:text-6xl">Hi, I'm <span class="text-indigo-500 font-bold underline decoration-2 decoration-indigo-500">Thibaut</span></p>
+      <p class="p-2 text-3xl md:text-3xl lg:text-4xl">A Full-Stack Developer located in France.</p>
+    </div>
+    <div class="flex h-full w-full items-center justify-center lg:block lg:w-2/5 lg:h-full lg:mr-10">
+      <img [src]="applyPicture()" class="md:max-h-500" alt="picture of me">
+    </div>
+  </div>
+</div>
